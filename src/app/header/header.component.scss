@@ -1,0 +1,27 @@
+.nav-header {
+    height: 109px;
+    position: sticky;
+    background-color: rgb(20,29,47);
+    top: 0;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    z-index: 1000;
+    // background-color: rgba(255, 0, 0, 0.189);  //später entfernen!!! nur zu testzwecken.
+}
+
+.nav-links {
+    span {
+        padding: 16px;
+        cursor: pointer;
+    }
+}
+
+.margin-left-right {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    align-items: center;
+    height: 100%;
+}

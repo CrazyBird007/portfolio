@@ -4,11 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { StartComponent } from './start/start.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { SkillsComponent } from './skills/skills.component';
+import { PortfolioPartComponent } from './portfolio-part/portfolio-part.component';
+import { PortfolioTemplateComponent } from './portfolio-template/portfolio-template.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    StartComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    PortfolioPartComponent,
+    PortfolioTemplateComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
