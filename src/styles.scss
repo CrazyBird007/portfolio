@@ -1,11 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: rgb(20, 29, 47);
     color: white;
     font-family: 'Poppins', sans-serif; //link in index.html noch ersetzen durch download!
+    overflow-x: hidden;
 }
 
 .flex {
     display: flex;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.orange-button {
+    button {
+        margin-top: 24px;
+        padding: 15px 30px;
+        background-color: rgba(250, 121, 2, 1);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 225ms, padding 225ms;
+
+        &:hover {
+            background-color: rgba(255, 71, 71, 1);
+            padding: 20px 40px;
+        }
+    }
+}
+
+.red-button {
+    button {
+        margin-top: 24px;
+        padding: 15px 30px;
+        background-color: rgba(255, 71, 71, 1);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 225ms;
+
+        &:hover {
+            background-color: rgba(250, 121, 2, 1);
+        }
+    }
+}
+
+.git-button {
+    button {
+        margin-top: 24px;
+        padding: 14px 30px;
+        background-color: rgb(20, 29, 47);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(250, 121, 2, 1);
+        outline: none;
+        cursor: pointer;
+        transition: background-color 225ms;
+        margin-bottom: 40px;
+
+        &:hover {
+            background-color: rgba(250, 121, 2, 1);
+        }
+    }
+}
+
+.sprung {
+    position: absolute;
+    margin: -109px; // minus header height, otherwise is the Contact not visible
 }

@@ -1,0 +1,56 @@
+section {
+    margin-top: 150px;
+    display: flex;
+}
+
+.text-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    div {
+        img {
+            right: 0;
+        }
+    }
+}
+
+.logo-container {
+    width: 70%;
+}
+
+.button-box {
+    height: 45px;
+}
+
+.logo-gap {
+    gap: 15%;
+    display: flex;
+
+    img {
+        height: 60px;
+        width: 100%;
+        max-width: 60px;
+        object-fit: contain;
+    }
+
+    div {
+        min-width: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.m-bottom {
+    margin-bottom: 10%;
+}
+
+.skill-red-line {
+    position: absolute;
+    margin-top: -150px;
+}

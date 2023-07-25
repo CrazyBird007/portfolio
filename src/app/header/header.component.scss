@@ -10,9 +10,11 @@
 }
 
 .nav-links {
-    span {
-        padding: 16px;
+    a {
+        margin-left: 16px;
         cursor: pointer;
+        color: white;
+        text-decoration: none;
     }
 }
 

@@ -1,0 +1,30 @@
+section {
+    background-color: rgb(20, 29, 47);
+    margin-left: -10vw;
+    margin-right: -10vw;
+    border-top: 4px solid rgba(250, 121, 2, 1);
+    margin-top: 150px;
+}
+
+.footer-box {
+    height: 291px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+    img {
+        cursor: pointer;
+    }
+}
+
+.copyright {
+    p {
+        font-size: 23px;
+    }
+}

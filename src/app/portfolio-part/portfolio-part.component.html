@@ -1,6 +1,15 @@
-<p>-------------portfolio-part works! start gefüllt mit templates -----------------</p>
+<section>
+    <div class="portfolio-container">
+        <div>
+            <img id="line-small" src="./assets/img/portfolio/portfolio-left-line.png" alt="">
+            <h4>Portfolio</h4>
+            <img id="line-length" src="./assets/img/portfolio/portfolio-right-line.png" alt="">
+        </div>
+        <p>This page is a sample of my work - please feel free to try them out.</p>
+    </div>
 
-<app-portfolio-template></app-portfolio-template>
-<app-portfolio-template></app-portfolio-template>
-<app-portfolio-template></app-portfolio-template>
-<p id="test">1234567------------------test damit ich weiß wie man nach links kommt oder rechts  haha-----------------1234567</p>
+
+    <app-portfolio-template *ngFor="let x of [1,2,3]"></app-portfolio-template>
+    
+
+</section>

@@ -1,0 +1,32 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 56px;
+}
+
+.project-img {
+    img {
+        height: 500px;
+    }
+}
+
+.content {
+    margin-left: 100px;
+    h5 {
+        color: rgba(255, 71, 71, 1);
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 0;
+    }
+    span {
+        color: rgba(250, 121, 2, 1);
+        font-weight: 400;
+        font-size: 23px;
+    }
+}
+

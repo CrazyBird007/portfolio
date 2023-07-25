@@ -1,3 +1,37 @@
-#test {
-margin-left: -10vw;
+section {
+    margin-top: 150px;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // gap: 36px;
+    // justify-content: center;
+    margin-right: -10vw;
+    right: 0;
+    margin-left: 20vw;
+    margin-bottom: 50px;
+
+    img {
+        height: 4px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+#line-small {
+    margin-top: 53px;
+    position: absolute;
+    margin-left: -144px;
+}
+
+#line-length {
+    width: 1000px;
+    position: absolute;
+    margin-top: -83px;
+    margin-left: 337px;
 }
