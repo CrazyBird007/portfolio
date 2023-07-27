@@ -1,4 +1,29 @@
-<section>
+<section [class.reverse]="project.reverse">
+    <div class="project-img">
+        <img src="{{ project.img }}" alt="">
+    </div>
+    <div class="content" [class.reverse-content]="project.reverse">
+        <h5>{{ project.name }}</h5>
+        <span>{{ project.code }}</span>
+        <p>{{ project.description }}</p>
+        <div class="button-container" [class.button-container-reverse]="project.reverse">
+            <form class="red-button" action="{{ project.projectlink }}" target="_blank">
+                <button type="submit">Live test</button>
+            </form>
+            <form class="git-button" action="{{ project.githublink }}" target="_blank">
+                <button type="submit">Github</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- <section>
     <div class="project-img">
         <img src="./assets/img/portfolio/pollo-loco.png" alt="">
     </div>
@@ -17,4 +42,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->

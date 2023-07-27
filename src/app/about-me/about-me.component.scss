@@ -1,8 +1,7 @@
 section {
-    // background-color: rgba(255, 0, 0, 0.466);
     display: flex;
     margin-right: -10vw;
-
+    margin-top: 159px;
 }
 
 .about-me-text {
@@ -20,11 +19,9 @@ section {
 }
 
 .ellipse-face {
-    // position: absolute;
     height: 453px;
 
     img {
-        // position: absolute;
         height: 447px;
         z-index: 5;
     }
@@ -32,19 +29,20 @@ section {
 
 #albert-face {
     position: absolute;
-    margin-top: 0px;
-    margin-left: 74px;
-    border-radius: 200px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 275px;
+    height: 439px;
+    width: 439px;
 }
 
 .overflow-hidden {
     overflow-x: hidden;
 }
+
 #ellipse-line {
     height: 4px;
     min-width: 500px;
-    // width: 100%;
-    // height: 100%;
 }
 
 .text-image {
@@ -60,6 +58,45 @@ section {
 .shadow-purple {
     position: absolute;
     height: 639px;
-    margin-left: 71%;
-    margin-top: -11%;
+    margin-left: 92%;
+    margin-top: -9%;
+}
+
+@media (max-width: 1200px) {
+    .about-me-text {
+        width: 100%;
+        margin-right: 10vw;
+    }
+
+    .ellipse {
+        display: none;
+    }
+
+    .shadow-purple {
+        margin-top: 10%;
+        margin-left: 82%;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .shadow-purple {
+        margin-top: 33%;
+        margin-left: 92%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .shadow-purple {
+        margin-top: 80%;
+        margin-left: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    .shadow-purple {
+        margin-top: 146%;
+        margin-left: 71%;
+    }
 }

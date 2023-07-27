@@ -9,20 +9,28 @@ section {
     gap: 56px;
 }
 
+.button-container-reverse {
+    justify-content: flex-end;
+}
+
 .project-img {
     img {
         height: 500px;
+        width: 500px;
     }
 }
 
 .content {
+    width: 100%;
     margin-left: 100px;
+
     h5 {
         color: rgba(255, 71, 71, 1);
         font-weight: 700;
         font-size: 32px;
         margin-top: 0;
     }
+
     span {
         color: rgba(250, 121, 2, 1);
         font-weight: 400;
@@ -30,3 +38,56 @@ section {
     }
 }
 
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.reverse-content {
+    text-align: right;
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .reverse-content {
+        margin-right: 0;
+    }
+
+    .content {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px)  {
+    .project-img img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px)  {
+    .project-img img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px)  {
+    .project-img img {
+        height: 250px;
+        width: 250px;
+    }
+}

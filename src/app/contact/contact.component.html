@@ -1,27 +1,23 @@
-<div id="end" class="sprung"></div>
+<div id="end2" class="sprung"></div>
 <section>
     <div>
         <h4>Contact</h4>
         <img id="contact-line" src="./assets/img/contact-line.png" alt="">
     </div>
-    <div class="flex">
+    <div class="flex mobile-direction">
         <div class="content">
-            <!-- <div>
-            <h4>Contact</h4>
-            <img id="contact-line" src="./assets/img/contact-line.png" alt="">
-        </div> -->
             <span>Got a problem to solve?</span>
             <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
                 projects with my work.</p>
             <p>Need a Frontend developer? <b>Contact me!</b></p>
         </div>
         <div class="form-box">
-            <form action="" class="orange-button">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your email">
-                <textarea name="" id="" rows="7" placeholder="Your message"></textarea>
+            <form (submit)="sendMail()" class="orange-button" #myForm ngNativeValidate>
+                <input name="name" type="text" placeholder="Your name" #nameField required>
+                <input name="email" type="email" placeholder="Your email" #emailField required>
+                <textarea name="message" id="" rows="7" placeholder="Your message" #messageField required></textarea>
                 <div class="button-box">
-                    <button>Send message :)</button>
+                    <button #sendButton>Send message :)</button>
                 </div>
             </form>
         </div>
@@ -31,4 +27,6 @@
             <img id="go-up-button" src="./assets/img/go-up-button.png" alt="">
         </a>
     </div>
+    <!-- <img class="shadow-contact-left" src="./assets/img/shadow-contact-left.png" alt=""> -->
+    <img class="shadow-contact-right" src="./assets/img/skills/shadow-orange-skill.png" alt="">
 </section>

@@ -35,3 +35,89 @@ section {
     margin-top: -83px;
     margin-left: 337px;
 }
+
+.shadow-portfolio {
+    position: absolute;
+    height: 750px;
+    margin-left: 6%;
+    margin-top: -87%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@media (max-width: 1405px) {
+    #line-length {
+        margin-top: -70px;
+        margin-left: 266px;
+    }
+
+    #line-small {
+        margin-top: 36px;
+        margin-left: -160px;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        margin-top: 225px;
+    }
+
+    .shadow-portfolio {
+        margin-left: -12%;
+        margin-top: -236%;
+    }
+}
+
+@media (max-width: 1050px) {
+    #line-length {
+        margin-top: -55px;
+        margin-left: 195px;
+    }
+
+    #line-small {
+        margin-top: 23px;
+        margin-left: -164px;
+    }
+}
+
+@media (max-width: 800px) {
+    .shadow-portfolio {
+        margin-left: -26%;
+        margin-top: -311%;
+    }
+}
+
+@media (max-width: 600px) {
+    .shadow-portfolio {
+        margin-top: -450%;
+    }
+}
+
+@media (max-width: 440px) {
+    #line-length {
+        margin-top: -50px;
+        margin-left: 88px;
+    }
+
+    .shadow-portfolio {
+        margin-left: -26%;
+        margin-top: -537%;
+    }
+
+    #line-small {
+        margin-top: 15px;
+        margin-left: -200px;
+    }
+
+    .portfolio-container {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .shadow-portfolio {
+        margin-top: -600%;
+    }
+}

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -13,6 +14,19 @@ body {
 
 .flex {
     display: flex;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 57px;
+    font-weight: 400;
+    color: rgba(255, 71, 71, 1);
+    margin: 0;
 }
 
 h4 {
@@ -84,4 +98,53 @@ h4 {
 .sprung {
     position: absolute;
     margin: -109px; // minus header height, otherwise is the Contact not visible
+}
+
+@media (max-width: 1405px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 41px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .git-button button {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 440px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
 }

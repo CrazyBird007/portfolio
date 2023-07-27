@@ -17,12 +17,12 @@ section {
     position: absolute;
     left: 0;
     margin-top: -84px;
+    margin-left: -10vw;
 }
 
 .form-box {
     width: 50%;
     display: flex;
-    // align-items: end;
     justify-content: center;
 
     form {
@@ -74,10 +74,82 @@ section {
 
 .go-up-button {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 50px;
 
     img {
         cursor: pointer;
+    }
+}
+
+.shadow-contact-right {
+    position: absolute;
+    height: 750px;
+    margin-top: -500px;
+    z-index: -1;
+    transform: rotate(73deg);
+    right: -300px;
+}
+
+.shadow-contact-left {
+    position: absolute;
+    height: 577px;
+    margin-left: -26%;
+    margin-top: 403px;
+    z-index: -1;
+    transform: rotate(241deg);
+}
+
+@media (max-width: 1405px) {
+    .shadow-contact-left {
+        margin-left: -26%;
+        margin-top: 374px;
+    }
+
+    #contact-line {
+        margin-top: -73px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .content span {
+        font-size: 20px;
+    }
+
+    #contact-line {
+        margin-top: -58px;
+    }
+}
+
+@media (max-width: 900px) {
+    .mobile-direction {
+        flex-direction: column;
+    }
+
+    .form-box {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact-line {
+        margin-left: -20%;
+    }
+}
+
+@media (max-width: 440px) {
+    #contact-line {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 400px) {
+    #contact-line {
+        margin-left: -26%;
     }
 }

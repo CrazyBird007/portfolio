@@ -7,9 +7,11 @@ section {
     display: flex;
     align-items: center;
     text-align: center;
+
     div {
         img {
             right: 0;
+            margin-right: -10vw;
         }
     }
 }
@@ -53,4 +55,96 @@ section {
 .skill-red-line {
     position: absolute;
     margin-top: -150px;
+}
+
+.shadow-orange-skill {
+    position: absolute;
+    height: 750px;
+    margin-left: -32%;
+    margin-top: -7%;
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .text-button {
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 1050px) {
+    .logo-gap {
+        div {
+            min-width: 67px;
+        }
+
+        img {
+            height: 40px;
+            width: 100%;
+            max-width: 40px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .logo-container {
+        width: 100%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-gap {
+        // gap: 12%;
+        div {
+            min-width: 67px;
+        }
+
+        img {
+            height: 40px;
+            width: 100%;
+            max-width: 40px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    .shadow-orange-skill {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-gap {
+        gap: 9%;
+    }
+}
+
+@media (max-width: 415px) {
+    .logo-gap {
+        div {
+            min-width: 50px;
+        }
+
+        img {
+            height: 30px;
+            width: 100%;
+            max-width: 30px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .logo-gap {
+        gap: 7%;
+    }
 }

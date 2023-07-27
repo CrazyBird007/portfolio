@@ -1,20 +1,24 @@
 .nav-header {
     height: 109px;
-    position: sticky;
-    background-color: rgb(20,29,47);
+    position: fixed;
+    background-color: rgb(20, 29, 47);
     top: 0;
     margin-left: -10vw;
     margin-right: -10vw;
     z-index: 1000;
-    // background-color: rgba(255, 0, 0, 0.189);  //später entfernen!!! nur zu testzwecken.
+    width: 100%;
 }
 
 .nav-links {
     a {
-        margin-left: 16px;
+        margin-left: 48px;
         cursor: pointer;
         color: white;
         text-decoration: none;
+
+        &:hover {
+            color: rgb(250, 121, 2);
+        }
     }
 }
 
@@ -26,4 +30,10 @@
     font-size: 23px;
     align-items: center;
     height: 100%;
+}
+
+@media (max-width: 775px) {
+    .nav-links {
+        display: none;
+    }
 }

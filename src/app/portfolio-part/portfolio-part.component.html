@@ -9,7 +9,8 @@
     </div>
 
 
-    <app-portfolio-template *ngFor="let x of [1,2,3]"></app-portfolio-template>
+    <app-portfolio-template *ngFor="let data of projects" [project]="data"></app-portfolio-template>
     
 
+<img class="shadow-portfolio" src="./assets/img/portfolio/shadow-portfolio.png" alt="">
 </section>
