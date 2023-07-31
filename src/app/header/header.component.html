@@ -1,11 +1,37 @@
 <div class="nav-header">
     <div class="margin-left-right">
-        <div>Alberts LOGO</div>
+        <div>
+            <a class="justify-logo" href="#top">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+        </div>
 
         <div class="nav-links">
-            <a href="#end2">About me</a>
-            <a href="#end2">Skills</a>
-            <a href="#end2">Portfolio</a>
+            <a href="#about-me">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
+        <div id="burger-menu">
+            <img src="./assets/img/burger-menu.png" alt="" (click)="toggleMobileNavbar()">
         </div>
     </div>
 </div>
+
+<!-- mobile menu -->
+<section *ngIf="showMobileNavbar">
+    <div class="header">
+        <div class="margin-left-right">
+            <a class="justify-logo" href="#top">
+                <img src="./assets/img/logo.png" alt="" (click)="toggleMobileNavbarBack()">
+            </a>
+            <img id="burger-menu-mobile" src="./assets/img/burger-menu-close.png" alt=""
+                (click)="toggleMobileNavbarBack()">
+        </div>
+    </div>
+    <div class="links">
+        <a href="#about-me" (click)="toggleMobileNavbarBack()">About me</a>
+        <a href="#skills" (click)="toggleMobileNavbarBack()">Skills</a>
+        <a href="#portfolio" (click)="toggleMobileNavbarBack()">Portfolio</a>
+        <a href="#contact" (click)="toggleMobileNavbarBack()">Contact</a>
+    </div>
+</section>

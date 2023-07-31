@@ -6,6 +6,21 @@ section {
     margin-top: 150px;
 }
 
+.logo-imprint {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(250, 121, 2);
+        }
+    }
+}
+
 .footer-box {
     height: 291px;
     margin-left: 10vw;
@@ -22,11 +37,31 @@ section {
     img {
         cursor: pointer;
     }
+
+    a {
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .copyright {
     p {
         font-size: 23px;
+    }
+}
+
+.justify-logo {
+    img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .justify-logo img {
+        height: 80px;
     }
 }
 
@@ -36,6 +71,7 @@ section {
         text-align: center;
         justify-content: space-evenly;
     }
+
     .copyright {
         p {
             font-size: 16px;

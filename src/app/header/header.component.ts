@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  showMobileNavbar: boolean = false;
 
+  toggleMobileNavbar() {
+    this.showMobileNavbar = true;
+  }
+
+  toggleMobileNavbarBack() {
+    this.showMobileNavbar = false;
+  }
 }

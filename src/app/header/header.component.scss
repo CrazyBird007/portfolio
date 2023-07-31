@@ -30,10 +30,114 @@
     font-size: 23px;
     align-items: center;
     height: 100%;
+
+    img {
+        height: 100px;
+    }
+}
+
+.justify-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#burger-menu {
+    cursor: pointer;
+
+    img {
+        height: 30px;
+    }
 }
 
 @media (max-width: 775px) {
     .nav-links {
         display: none;
+    }
+
+    #burger-menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 775px) {
+    #burger-menu {
+        display: none;
+    }
+}
+
+// mobile menu
+section {
+    z-index: 1100;
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    margin-left: -10vw;
+    background-color: rgb(65, 72, 86);
+    animation: slideInFromRight 225ms ease;
+}
+
+.header {
+    height: 109px;
+    background-color: rgb(20, 29, 47);
+    color: white;
+}
+
+.margin-left-right {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    img {
+        height: 100px;
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 109px);
+
+    a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 32px;
+        padding: 8px;
+
+        &:hover {
+            color: rgb(250, 121, 2);
+        }
+    }
+}
+
+#burger-menu-mobile {
+    height: 30px;
+    cursor: pointer;
+}
+
+@keyframes slideInFromRight {
+    from {
+        right: -110%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -110%;
     }
 }

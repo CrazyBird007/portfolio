@@ -10,10 +10,10 @@ export class PortfolioPartComponent {
     {
       img: './assets/img/portfolio/join.png',
       name: 'Join',
-      code: 'Angular | TypeScript | HTML | CSS | Firebase ',
+      code: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      projectlink: 'https://google.com/',
-      githublink: 'https://github.com/',
+      projectlink: 'https://albert-wissigkeit.de/Join/',
+      githublink: 'https://github.com/CrazyBird007/Join',
       reverse: false
     },
     {
@@ -21,8 +21,8 @@ export class PortfolioPartComponent {
       name: 'El Pollo Loco',
       code: 'JavaScript | HTML | CSS',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      projectlink: 'https://google.com/',
-      githublink: 'https://github.com/',
+      projectlink: 'https://albert-wissigkeit.de/ElPolloLoco/',
+      githublink: 'https://github.com/CrazyBird007/PolloLoco',
       reverse: true
     },
     {
@@ -30,8 +30,8 @@ export class PortfolioPartComponent {
       name: 'Pokedex',
       code: 'JavaScript | HTML | CSS | Api',
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      projectlink: 'https://google.com/',
-      githublink: 'https://github.com/',
+      projectlink: 'https://albert-wissigkeit.de/PokeDex/',
+      githublink: 'https://github.com/CrazyBird007/PokeDex',
       reverse: false
     }];
 }

@@ -7,6 +7,9 @@ section {
 .button-container {
     display: flex;
     gap: 56px;
+    a {
+        margin-top: 24px;
+    }
 }
 
 .button-container-reverse {

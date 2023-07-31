@@ -18,10 +18,13 @@ section {
 
 .logo-container {
     width: 70%;
+    z-index: 1;
 }
 
 .button-box {
     height: 45px;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-gap {
@@ -41,6 +44,10 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            transform: rotate(8deg);
+        }
 
         p {
             margin: 0;
@@ -65,9 +72,19 @@ section {
     z-index: -1;
 }
 
+@media (max-width: 1405px) {
+    .skill-red-line {
+        margin-top: -141px;
+    }
+}
+
 @media (max-width: 1200px) {
     .text-button {
         align-items: flex-end;
+    }
+
+    .skill-red-line {
+        margin-top: -136px;
     }
 }
 
@@ -83,6 +100,16 @@ section {
             max-width: 40px;
         }
     }
+
+    .skill-red-line {
+        margin-top: -126px;
+    }
+}
+
+@media (max-width: 905px) {
+    .skill-red-line {
+        margin-top: -147px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -92,16 +119,18 @@ section {
 
     .logo-container {
         width: 100%;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* flex-direction: column; */
         margin-top: 100px;
+    }
+
+    .skill-red-line {
+        margin-top: -123px;
     }
 }
 
 @media (max-width: 600px) {
     .logo-gap {
-        // gap: 12%;
+        gap: 9%;
+
         div {
             min-width: 67px;
         }
@@ -111,18 +140,26 @@ section {
             width: 100%;
             max-width: 40px;
         }
+
         p {
             font-size: 12px;
         }
     }
+
     .shadow-orange-skill {
         opacity: 0.5;
     }
 }
 
-@media (max-width: 600px) {
-    .logo-gap {
-        gap: 9%;
+@media (max-width: 525px) {
+    .skill-red-line {
+        margin-top: -147px;
+    }
+}
+
+@media (max-width: 440px) {
+    .skill-red-line {
+        margin-top: -140px;
     }
 }
 
@@ -137,12 +174,17 @@ section {
             width: 100%;
             max-width: 30px;
         }
+
         p {
             font-size: 10px;
         }
     }
 }
-
+@media (max-width: 403px) {
+    .skill-red-line {
+        margin-top: -165px;
+    }
+}
 @media (max-width: 350px) {
     .logo-gap {
         gap: 7%;
