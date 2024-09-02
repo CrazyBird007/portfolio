@@ -122,6 +122,10 @@ section {
     cursor: pointer;
 }
 
+.translate_button {
+    margin-left: 0px !important;
+}
+
 @keyframes slideInFromRight {
     from {
         right: -110%;

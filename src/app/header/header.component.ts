@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-header',
@@ -15,4 +16,6 @@ export class HeaderComponent {
   toggleMobileNavbarBack() {
     this.showMobileNavbar = false;
   }
+
+  translate = inject(TranslationService);
 }

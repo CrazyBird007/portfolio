@@ -12,7 +12,16 @@ import { PortfolioTemplateComponent } from './portfolio-template/portfolio-templ
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ImprintComponent } from './footer/imprint/imprint.component';
+import { DataprotectionComponent } from './footer/dataprotection/dataprotection.component';
+import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
 
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http, '/portfolio/assets/i18n/');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,15 +32,26 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PortfolioPartComponent,
     PortfolioTemplateComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent,
+    DataprotectionComponent,
+    PortfolioPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
-  providers: [],
+  providers: [TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

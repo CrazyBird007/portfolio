@@ -1,0 +1,27 @@
+section {
+    margin: 0;
+    background-color: rgb(20, 29, 47);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 10%;
+}
+
+.link {
+    color: aqua;
+}
+
+.link:hover {
+    color: rgb(250, 121, 2);
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color:  white;
+}

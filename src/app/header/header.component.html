@@ -7,9 +7,11 @@
         </div>
 
         <div class="nav-links">
-            <a href="#about-me">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#about-me">{{"aboutMe" | translate}}</a>
+            <a href="#skills">{{"skills" | translate}}</a>
+            <a href="#portfolio">{{"portfolio" | translate}}</a>
+            <a (click)="translate.switchLanguage('en')">EN</a> |
+            <a (click)="translate.switchLanguage('de')" class="translate_button">DE</a>
         </div>
         <div id="burger-menu">
             <img src="./assets/img/burger-menu.png" alt="" (click)="toggleMobileNavbar()">
@@ -29,9 +31,9 @@
         </div>
     </div>
     <div class="links">
-        <a href="#about-me" (click)="toggleMobileNavbarBack()">About me</a>
-        <a href="#skills" (click)="toggleMobileNavbarBack()">Skills</a>
-        <a href="#portfolio" (click)="toggleMobileNavbarBack()">Portfolio</a>
-        <a href="#contact" (click)="toggleMobileNavbarBack()">Contact</a>
+        <a href="#about-me" (click)="toggleMobileNavbarBack()">{{"aboutMe" | translate}}</a>
+        <a href="#skills" (click)="toggleMobileNavbarBack()">{{"skills" | translate}}</a>
+        <a href="#portfolio" (click)="toggleMobileNavbarBack()">{{"portfolio" | translate}}</a>
+        <a href="#contact" (click)="toggleMobileNavbarBack()">{{"contact" | translate}}</a>
     </div>
 </section>

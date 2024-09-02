@@ -75,9 +75,10 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "portfolio:build"
+        "builder": "@angular-devkit/build-angular:extract-i18n",
+        "options": {
+          "browserTarget": "portfolio:build",
+          "outputPath": "src/locale"
           }
         },
         "test": {
