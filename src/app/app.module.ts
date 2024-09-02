@@ -19,9 +19,14 @@ import { ImprintComponent } from './footer/imprint/imprint.component';
 import { DataprotectionComponent } from './footer/dataprotection/dataprotection.component';
 import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
 
+// export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+//   return new TranslateHttpLoader(http);  //for local tests
+// }
+
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http, '/portfolio/assets/i18n/');
+  return new TranslateHttpLoader(http, '/portfolio/assets/i18n/');  //for server
 }
+
 @NgModule({
   declarations: [
     AppComponent,

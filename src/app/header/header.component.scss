@@ -75,6 +75,7 @@ section {
     margin-left: -10vw;
     background-color: rgb(65, 72, 86);
     animation: slideInFromRight 225ms ease;
+    top: 0;
 }
 
 .header {
@@ -124,6 +125,16 @@ section {
 
 .translate_button {
     margin-left: 0px !important;
+}
+
+.translate_responsive {
+        display: flex;
+}
+
+.translate_button_responsive {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    margin: 4px !important;
 }
 
 @keyframes slideInFromRight {

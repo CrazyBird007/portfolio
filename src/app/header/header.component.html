@@ -35,5 +35,9 @@
         <a href="#skills" (click)="toggleMobileNavbarBack()">{{"skills" | translate}}</a>
         <a href="#portfolio" (click)="toggleMobileNavbarBack()">{{"portfolio" | translate}}</a>
         <a href="#contact" (click)="toggleMobileNavbarBack()">{{"contact" | translate}}</a>
+        <div class="translate_responsive">
+            <a (click)="translate.switchLanguage('en')" class="translate_button_responsive">EN</a>
+            <a (click)="translate.switchLanguage('de')" class="translate_button_responsive">DE</a>
+        </div>
     </div>
 </section>

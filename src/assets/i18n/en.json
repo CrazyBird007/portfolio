@@ -6,5 +6,11 @@
     "frontenddev": "FRONTEND DEVELOPER",
     "iam": "I am",
     "letstalk": "Let´s Talk",
-    "scroll": "Scroll down"
+    "scroll": "Scroll down",
+
+    "imprint_imprint": "Imprint",
+    "contact_imprint": "Contact",
+    "information_imprint": "Information according to",
+
+    "data_protection_data": "Privacy Policy"
 }

@@ -1,12 +1,8 @@
 RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME} -s [OR]
+# Wenn die angeforderte Datei existiert oder ein Verzeichnis ist, nicht umleiten
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteCond %{REQUEST_FILENAME} -l [OR]
-
-RewriteCond %{REQUEST_FILENAME} -d
-
-RewriteRule ^.*$ - [NC,L]
-
-
-RewriteRule ^(.*) /index.html [NC,L]
+# Alle anderen Anfragen an index.html weiterleiten
+RewriteRule ^ index.html [L]
