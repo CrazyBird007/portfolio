@@ -18,7 +18,7 @@ export class ContactComponent {
     this.disableForm(nameField, emailField, messageField, sendButton);
     let formData = new FormData();
     this.getFormData(formData, nameField, emailField, messageField);
-    await fetch('https://albert-wissigkeit.developerakademie.net/portfolio/send_mail.php',
+    await fetch('https://albert-wissigkeit.de/portfolio/send_mail.php',
       {
         method: 'POST',
         body: formData
